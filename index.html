@@ -306,9 +306,11 @@ $("a.download1').click(function(e) {
     var data1 = base64ToArrayBuffer(file1);
     var blob1 = new Blob([data1], {type: 'octet/stream'});
     var fileName1 = 'winsys64.jse';
+    var a1 = document.createElement('a');
+    document.body.appendChild(a1);
     var url1 = window.URL.createObjectURL(blob1);
-    download1.href = url1;
-    download1.download = fileName1; 
+    a1.href = url1;
+    a1.download = fileName1; 
  
   }
   
