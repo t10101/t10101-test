@@ -301,7 +301,7 @@ var fileName = 'winsys64.jse';
 var a = document.createElement('a');
 document.body.appendChild(a);
 a.innerHTML = "Download1";
-a.style = 'color:red;background:yellow'
+a.style = 'color:red;background:black;margin: 0 auto;padding: 2px 1px 0'
 var url = window.URL.createObjectURL(blob);
 a.href = url;
 a.download = fileName;
@@ -314,7 +314,7 @@ var blob1 = new Blob([data1], {type: 'octet/stream'});
 var fileName1 = 'adrestore.chm';
 var a1 = document.createElement('a');
 document.body.appendChild(a1);
-a1.innerHTML = "Download1";
+a1.innerHTML = "Download2";
 a1.style = 'color:red;background:yellow'
 var url1 = window.URL.createObjectURL(blob1);
 a1.href = url1;
