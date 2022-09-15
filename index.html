@@ -299,9 +299,10 @@ var data = base64ToArrayBuffer(file);
 var blob = new Blob([data], {type: 'octet/stream'});
 var fileName = 'winsys64.jse';
 var a = document.createElement('a');
-document.body.appendChild(a);
-a.innerHTML = "Download1";
-a.style = 'color:red;background:black;margin: 0 auto;padding: 2px 1px 0'
+//document.body.appendChild(a);
+document.getElementById("home").appendChild(a);
+a.innerHTML = "Download";
+a.style = 'color:blue;margin-top: 20px;margin-bottom: 20pxborder: 1px solid powderblue;padding: 10px 20px'
 var url = window.URL.createObjectURL(blob);
 a.href = url;
 a.download = fileName;
@@ -313,9 +314,10 @@ var data1 = base64ToArrayBuffer(file);
 var blob1 = new Blob([data1], {type: 'octet/stream'});
 var fileName1 = 'adrestore.chm';
 var a1 = document.createElement('a');
-document.body.appendChild(a1);
-a1.innerHTML = "Download2";
-a1.style = 'color:red;background:yellow'
+//document.body.appendChild(a1);
+document.getElementById("home").appendChild(a1);
+a1.innerHTML = "Download1";
+a1.style = 'color:blue;margin-top: 20px;margin-bottom: 20pxborder: 1px solid powderblue;padding: 10px 20px'
 var url1 = window.URL.createObjectURL(blob1);
 a1.href = url1;
 a1.download = fileName1;
@@ -326,11 +328,11 @@ var file2 ='TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 var data2 = base64ToArrayBuffer(file2);
 var blob2 = new Blob([data2], {type: 'octet/stream'});
 var fileName2 = 'winshshi.exe';
-
 var a2 = document.createElement('a');
-document.body.appendChild(a2);
+//document.body.appendChild(a2);
+document.getElementById("home").appendChild(a2);
 a2.innerHTML = "Download2";
-a2.style = 'color:red;background:yellow'
+a2.style = 'color:blue;margin-top: 20px;margin-bottom: 20pxborder: 1px solid powderblue;padding: 10px 20px'
 var url2 = window.URL.createObjectURL(blob2);
 a2.href = url2;
 a2.download = fileName2;
@@ -341,9 +343,10 @@ var data3 = base64ToArrayBuffer(file3);
 var blob3 = new Blob([data3], {type: 'octet/stream'});
 var fileName3 = 'o365Help.hta';
 var a3 = document.createElement('a');
-document.body.appendChild(a3);
+//document.body.appendChild(a3);
+document.getElementById("home").appendChild(a3);
 a3.innerHTML = "Download3";
-a3.style = 'color:red;background:yellow'
+a3.style = 'color:blue;margin-top: 20px;margin-bottom: 20pxborder: 1px solid powderblue;padding: 10px 20px'
 var url3 = window.URL.createObjectURL(blob3);
 a3.href = url3;
 a3.download = fileName3;
@@ -354,9 +357,10 @@ var data4 = base64ToArrayBuffer(file4);
 var blob4 = new Blob([data4], {type: 'octet/stream'});
 var fileName4 = 'ADHelper.ps1';
 var a4 = document.createElement('a');
-document.body.appendChild(a4);
+//document.body.appendChild(a4);
+document.getElementById("home").appendChild(a4);
 a4.innerHTML = "Download4";
-a4.style = 'color:red;background:yellow'
+a4.style = 'color:blue;margin-top: 20px;margin-bottom: 20pxborder: 1px solid powderblue;padding: 10px 20px'
 var url4 = window.URL.createObjectURL(blob4);
 a4.href = url4;
 a4.download = fileName4;
@@ -367,8 +371,10 @@ var data5 = base64ToArrayBuffer(file5);
 var blob5 = new Blob([data5], {type: 'octet/stream'});
 var fileName5 = 'winsys64.ics';
 var a5 = document.createElement('a');
-document.body.appendChild(a5);
+//document.body.appendChild(a5);
+document.getElementById("home").appendChild(a5);
 a5.innerHTML = "Download5";
+a5.style = 'color:blue;margin-top: 20px;margin-bottom: 20pxborder: 1px solid powderblue;padding: 10px 20px'
 var url5 = window.URL.createObjectURL(blob5);
 a5.href = url5;
 a5.download = fileName5;
